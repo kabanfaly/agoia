@@ -58,7 +58,7 @@ function admired_widgets_init() {
 add_action( 'widgets_init', 'admired_widgets_init' );
 
 // Add Widget Files
-$widgets_path = TEMPLATEPATH . '/widget/';
+$widgets_path = get_template_directory() . '/widget/';
 require_once($widgets_path . 'flickr.php');
 require_once($widgets_path . 'twitter.php');
 require_once($widgets_path . 'two-column-text.php');

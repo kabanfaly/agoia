@@ -4,7 +4,7 @@ Theme URI: http://wp-ultra.com/admired/
 Author: Brad Thomas
 Author URI: http://wp-ultra.com/
 Description: The Admired theme is a stylish and fully customizable WordPress theme. Make it yours with the easy customizable theme options with a simple check-box interface to easily change colors, fonts, skins, menus, sidebars, and much more. Uses Superfish menu effects and it has built-in pagination for post pages. It has special styles for six different post formats and an option to show post excerpts with thumbnails. Admired also has a HTML sitemap template, four extra widgets, Google fonts, and a responsive layout for mobile devices.
-Version: 1.2
+Version: 1.2.1
 License: GNU General Public License
 License URI: license.txt
 Tags: dark, light, white, black, silver, gray, blue, one-column, two-columns, three-columns, left-sidebar, right-sidebar, flexible-width, custom-background, custom-colors, custom-menu, editor-style, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
@@ -541,7 +541,7 @@ a:hover {
 }
 #site-description {
 	color: #c4c4c4;
-	font-size: 20px;
+	font-size: 18px;
 	font-style:italic;
 	font-weight: 600;
 	margin: 0 230px 1.1em 5px;
@@ -620,7 +620,7 @@ li.sfHover  a  .sf-sub-indicator {
 	width: 1010px;
 }
 #nav-menu {
-	/* fallback for web browsers that don’t support RGBa */
+	/* fallback for web browsers that donï¿½t support RGBa */
 	background: rgb(0, 0, 0);
 	background: rgba(0, 0, 0, 0.30);
 	display: block;
@@ -2411,7 +2411,7 @@ p.comment-form-comment {
 	background: -moz-linear-gradient(#8B8E96, #66686E);
 	background: -webkit-linear-gradient(#8B8E96, #66686E);
 	background: linear-gradient(#8B8E96, #66686E);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8B8E96', EndColorStr='#66686E'); /* IE6–IE9 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8B8E96', EndColorStr='#66686E'); /* IE6ï¿½IE9 */
 	border: 1px solid #66686E;
 	-moz-border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;

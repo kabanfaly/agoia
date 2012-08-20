@@ -9,6 +9,12 @@ Tested up to: 3.3.1
 == Change Log ==
 This change log was started beginning with Version 1.0
 
+= Changes Version 1.2.1 =
+
+* Added theme suport for custom backgrounds with backwards compatibility.
+* Fixed Google Analytics from showing on admin pages.
+* Fixed TEMPLATEPATH with get_template_directory();
+
 = Changes Version 1.2 =
 
 * Fixed for internationalization

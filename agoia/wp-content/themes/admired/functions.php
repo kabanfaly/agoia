@@ -36,13 +36,20 @@ function admired_setup() {
 	) );
 	// Post formats
 	add_theme_support( 'post-formats', array( 'aside', 'link', 'gallery', 'status', 'quote', 'image' ) );
-	add_custom_background();  // Custom backgrounds
+	// Custom Backgrounds
+	if ( function_exists('get_custom_header')) {
+		// WordPress 3.4+	
+        add_theme_support('custom-background');
+	} else {
+		// Backwards Compatibility
+        add_custom_background();
+	}
 	add_theme_support( 'post-thumbnails' );
 }
 endif; // admired_setup
 
 //Add Theme Options File
-$functions_path = TEMPLATEPATH . '/admin/';
+$functions_path = get_template_directory() . '/admin/';
 require_once ($functions_path . 'admired-options.php');
 require_once ($functions_path . 'admired-custom-header.php');
 
@@ -221,7 +228,7 @@ function admired_url_grabber() {
  *
  * @since admired 1.0
  */
-$widgets_path = TEMPLATEPATH . '/widget/';
+$widgets_path = get_template_directory() . '/widget/';
 require_once($widgets_path . 'widget-functions.php');
 
 /**
@@ -400,5 +407,5 @@ function admired_ga_enqueue_script() {
 	}
 }	
 // This will produce the javascript in the header of the blog
-add_action( 'wp_print_scripts', 'admired_ga_enqueue_script' );	
+add_action( 'wp_enqueue_scripts', 'admired_ga_enqueue_script' );	
 ?>
